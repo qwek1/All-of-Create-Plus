@@ -1,0 +1,851 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aether"
+	group: ""
+	id: "0B4B252E303AD920"
+	images: [
+		{
+			height: 1.0d
+			image: "deep_aether:item/holy_sword"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "aether:item/miscellaneous/bronze_dungeon_key"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "aether:item/miscellaneous/silver_dungeon_key"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "aether:item/miscellaneous/gold_dungeon_key"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "aether:item/weapons/flaming_sword"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "deep_aether:item/brass_dungeon_key"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: 1.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "aether:aether_portal_frame"
+			}
+			id: "33ACF33123AFA34F"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "5319AE5AD8B4782B"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["33ACF33123AFA34F"]
+			icon: {
+				id: "aether:carved_stone"
+			}
+			id: "2292A666E18750D9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71ECB49CE94F5172"
+				table_id: 5001068052608706388L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "278A58D865A0A0FE"
+				structure: "aether:bronze_dungeon"
+				type: "structure"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2292A666E18750D9"]
+			icon: {
+				id: "aether:sentry_stone"
+			}
+			id: "6B2D4650C9C0A0D6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C1E32B9D4C77572"
+				table_id: 5001068052608706388L
+				type: "loot"
+			}]
+			tasks: [{
+				entity: "aether:sentry"
+				id: "1CA1129DE43BA8AE"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6B2D4650C9C0A0D6"]
+			id: "15910AF06FABDAC3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "32275607BAEE7E42"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+				{
+					id: "2A981DF87CF6BA46"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "aether:slider"
+				icon: {
+					id: "deep_aether:slider_eye"
+				}
+				id: "4FEA8AF7E7DA3DA9"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["33ACF33123AFA34F"]
+			icon: {
+				id: "aether:angelic_stone"
+			}
+			id: "040F5D94B79C0172"
+			tasks: [{
+				id: "2D10DE9B6C1F9ED2"
+				structure: "aether:silver_dungeon"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["040F5D94B79C0172"]
+			icon: {
+				id: "aether:valkyrie_lance"
+			}
+			id: "55F9CA2E47618F83"
+			tasks: [{
+				entity: "aether:valkyrie"
+				id: "07BEE1787087B6A5"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["55F9CA2E47618F83"]
+			icon: {
+				id: "aether:valkyrie_helmet"
+			}
+			id: "2479918889179D2D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2E49283B6BD27F72"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "4C2A05D9F0BB2803"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "aether:valkyrie_queen"
+				icon: {
+					id: "aether:valkyrie_lance"
+				}
+				id: "16852E9D58C7F358"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["33ACF33123AFA34F"]
+			icon: {
+				id: "aether:hellfire_stone"
+			}
+			id: "026C85DB9A44EAC0"
+			tasks: [{
+				id: "69617C53D8E19D71"
+				structure: "aether:gold_dungeon"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["026C85DB9A44EAC0"]
+			icon: {
+				id: "deep_aether:sun_core"
+			}
+			id: "2C4E244A5F250282"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "58AB201FE8070B35"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "776266AC4BB4B88F"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "aether:sun_spirit"
+				id: "4082CE8623370BF6"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33ACF33123AFA34F"]
+			icon: {
+				id: "deep_aether:aether_mud_bricks"
+			}
+			id: "65F9CA4639FDAFE8"
+			tasks: [{
+				id: "383E239C05833578"
+				structure: "deep_aether:brass_dungeon"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["65F9CA4639FDAFE8"]
+			id: "724863A08532BD86"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7C79AC8EA41A5C4A"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "1607C652EFC459C8"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "deep_aether:brass_dungeon"
+				criterion: ""
+				id: "357A1753C0A983F8"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["040F5D94B79C0172"]
+			id: "43B934EF239C0E47"
+			rewards: [
+				{
+					count: 2
+					id: "22F0233C45C6351C"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "51DACED93B1BFBE2"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "228E5C5D9B05F97B"
+					item: { count: 1, id: "aether:valkyrie_lance" }
+					type: "item"
+				}
+				{
+					id: "0F24D7793ED28A28"
+					item: { count: 1, id: "aether:valkyrie_shovel" }
+					type: "item"
+				}
+				{
+					id: "64FD96A8BAF5F063"
+					item: { count: 1, id: "aether:valkyrie_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "5BFF8C37A2F7AA61"
+					item: { count: 1, id: "aether:valkyrie_axe" }
+					type: "item"
+				}
+				{
+					id: "1FF843DF832F3657"
+					item: { count: 1, id: "aether:valkyrie_hoe" }
+					type: "item"
+				}
+				{
+					id: "1EFE39533419D9C8"
+					item: { count: 1, id: "aether:valkyrie_helmet" }
+					type: "item"
+				}
+				{
+					id: "3AAE0DB182673DC2"
+					item: { count: 1, id: "aether:valkyrie_chestplate" }
+					type: "item"
+				}
+				{
+					id: "39871F65BBABF821"
+					item: { count: 1, id: "aether:valkyrie_leggings" }
+					type: "item"
+				}
+				{
+					id: "13ECDC13F78D027F"
+					item: { count: 1, id: "aether:valkyrie_boots" }
+					type: "item"
+				}
+				{
+					id: "297D25D1C94C64CE"
+					item: { count: 1, id: "aether:valkyrie_gloves" }
+					type: "item"
+				}
+				{
+					id: "2114BB0F2707C565"
+					item: { count: 1, id: "aether:valkyrie_cape" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2292A666E18750D9"]
+			id: "4EAC98F3B0292A2F"
+			rewards: [
+				{
+					count: 2
+					id: "1281007060EF637C"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "38E7E2364B67F46D"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "3409AEA557B91AB1"
+					item: { count: 1, id: "aether:neptune_helmet" }
+					type: "item"
+				}
+				{
+					id: "164212322CB3F025"
+					item: { count: 1, id: "aether:neptune_chestplate" }
+					type: "item"
+				}
+				{
+					id: "014AFF79072A3B6B"
+					item: { count: 1, id: "aether:neptune_leggings" }
+					type: "item"
+				}
+				{
+					id: "3925FECFF4E71145"
+					item: { count: 1, id: "aether:neptune_boots" }
+					type: "item"
+				}
+				{
+					id: "0B7A9F06A6374CC8"
+					item: { count: 1, id: "aether:neptune_gloves" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2292A666E18750D9"]
+			id: "6F7F6CA762CDE3E2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43495C5F78CBB0D5"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+				{
+					id: "4D28B0F44E5F27A5"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "67834B2A1FB99F26"
+					item: { count: 1, id: "aether:flaming_sword" }
+					type: "item"
+				}
+				{
+					id: "3BDA8C4027DC7E48"
+					item: { count: 1, id: "aether:phoenix_bow" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["33ACF33123AFA34F"]
+			id: "6DD98DC95D1BF9A9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7C126B580B182384"
+				table_id: 5001068052608706388L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "542A8941429FBC08"
+					item: { count: 1, id: "aether:zanite_sword" }
+					type: "item"
+				}
+				{
+					id: "19BA2170E59D8534"
+					item: { count: 1, id: "aether:zanite_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "43F9CA102BD69336"
+					item: { count: 1, id: "aether:zanite_axe" }
+					type: "item"
+				}
+				{
+					id: "32BB5C1B674DBDD3"
+					item: { count: 1, id: "aether:zanite_shovel" }
+					type: "item"
+				}
+				{
+					id: "2BEECB0968AB6D68"
+					item: { count: 1, id: "aether:zanite_hoe" }
+					type: "item"
+				}
+				{
+					id: "73391A24083F4016"
+					item: { count: 1, id: "aether:zanite_helmet" }
+					type: "item"
+				}
+				{
+					id: "13530142A07FB301"
+					item: { count: 1, id: "aether:zanite_chestplate" }
+					type: "item"
+				}
+				{
+					id: "47EFA9DE2107A8B1"
+					item: { count: 1, id: "aether:zanite_leggings" }
+					type: "item"
+				}
+				{
+					id: "4A090EAF2A4B33D4"
+					item: { count: 1, id: "aether:zanite_boots" }
+					type: "item"
+				}
+				{
+					id: "30CF15CCA90C9633"
+					item: { count: 1, id: "aether:zanite_gloves" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["026C85DB9A44EAC0"]
+			id: "29D75052B10ED660"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2101356DC75D210C"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "0D7F38AE816060C7"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "212E0B9DA9B1471E"
+					item: { count: 1, id: "aether:phoenix_helmet" }
+					type: "item"
+				}
+				{
+					id: "29608070ECA81A6A"
+					item: { count: 1, id: "aether:phoenix_chestplate" }
+					type: "item"
+				}
+				{
+					id: "09C2235DF8AF02AE"
+					item: { count: 1, id: "aether:phoenix_leggings" }
+					type: "item"
+				}
+				{
+					id: "1B446360765CC22C"
+					item: { count: 1, id: "aether:phoenix_boots" }
+					type: "item"
+				}
+				{
+					id: "62DD6431BAB19AF1"
+					item: { count: 1, id: "aether:phoenix_gloves" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["65F9CA4639FDAFE8"]
+			id: "02ED39E2107B45F3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4BBDD1C6FC2619A1"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+				{
+					count: 2
+					id: "2E46AF576A851F85"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "43CBAB5B69705FEC"
+					item: { count: 1, id: "deep_aether:stormforged_helmet" }
+					type: "item"
+				}
+				{
+					id: "689F1EB3D78B1F68"
+					item: { count: 1, id: "deep_aether:stormforged_chestplate" }
+					type: "item"
+				}
+				{
+					id: "60C6AA990665D06D"
+					item: { count: 1, id: "deep_aether:stormforged_leggings" }
+					type: "item"
+				}
+				{
+					id: "2CF335C8DEC37D72"
+					item: { count: 1, id: "deep_aether:stormforged_boots" }
+					type: "item"
+				}
+				{
+					id: "704125DDD2D020FD"
+					item: { count: 1, id: "deep_aether:stormforged_gloves" }
+					type: "item"
+				}
+				{
+					id: "2628FD43BA694E97"
+					item: { count: 1, id: "deep_aether:storm_sword" }
+					type: "item"
+				}
+				{
+					id: "39F0402F9ED71EE2"
+					item: { count: 1, id: "deep_aether:storm_bow" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6DD98DC95D1BF9A9"]
+			id: "44593D05DAE60C50"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0DD9B278CF3BF0DE"
+				table_id: 5001068052608706388L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "10C0B3400BA7F223"
+					item: { count: 1, id: "aether:gravitite_helmet" }
+					type: "item"
+				}
+				{
+					id: "6E9069DDF96FFF18"
+					item: { count: 1, id: "aether:gravitite_chestplate" }
+					type: "item"
+				}
+				{
+					id: "4D163A4B6A8D5BBF"
+					item: { count: 1, id: "aether:gravitite_leggings" }
+					type: "item"
+				}
+				{
+					id: "4770665DD6C159BC"
+					item: { count: 1, id: "aether:gravitite_boots" }
+					type: "item"
+				}
+				{
+					id: "08715C235A077F88"
+					item: { count: 1, id: "aether:gravitite_gloves" }
+					type: "item"
+				}
+				{
+					id: "14A53501D3060D2D"
+					item: { count: 1, id: "aether:gravitite_sword" }
+					type: "item"
+				}
+				{
+					id: "773292528FC9FCEE"
+					item: { count: 1, id: "aether:gravitite_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "331F9AC107CA50DE"
+					item: { count: 1, id: "aether:gravitite_shovel" }
+					type: "item"
+				}
+				{
+					id: "2E098DC79B673B77"
+					item: { count: 1, id: "aether:gravitite_axe" }
+					type: "item"
+				}
+				{
+					id: "5CACA5AA62D4E0FB"
+					item: { count: 1, id: "aether:gravitite_hoe" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["44593D05DAE60C50"]
+			id: "428D6B76084F9FC2"
+			rewards: [
+				{
+					count: 2
+					id: "74978D4260F6DFB1"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "77172217F8786C12"
+					table_id: 5001068052608706388L
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "28A8E23BCEBD9522"
+					item: { count: 1, id: "deep_aether:skyjade_helmet" }
+					type: "item"
+				}
+				{
+					id: "50619D3534E30A61"
+					item: { count: 1, id: "deep_aether:skyjade_chestplate" }
+					type: "item"
+				}
+				{
+					id: "494D88C3E2E1D302"
+					item: { count: 1, id: "deep_aether:skyjade_leggings" }
+					type: "item"
+				}
+				{
+					id: "415305D1B6D13EF0"
+					item: { count: 1, id: "deep_aether:skyjade_boots" }
+					type: "item"
+				}
+				{
+					id: "309EF23E5F411F5C"
+					item: { count: 1, id: "deep_aether:skyjade_gloves" }
+					type: "item"
+				}
+				{
+					id: "7287D460A5C1E570"
+					item: { count: 1, id: "deep_aether:skyjade_sword" }
+					type: "item"
+				}
+				{
+					id: "60E260307E397FA7"
+					item: { count: 1, id: "deep_aether:skyjade_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "2A95560568FACC27"
+					item: { count: 1, id: "deep_aether:skyjade_shovel" }
+					type: "item"
+				}
+				{
+					id: "3A6DE606AC34BCB7"
+					item: { count: 1, id: "deep_aether:skyjade_axe" }
+					type: "item"
+				}
+				{
+					id: "129666AD169F7CA9"
+					item: { count: 1, id: "deep_aether:skyjade_hoe" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["33ACF33123AFA34F"]
+			id: "657A048F6D064842"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "58239ED57F1160F8"
+					table_id: 5001068052608706388L
+					type: "choice"
+				}
+				{
+					count: 10
+					id: "64E8813CB65B0692"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2760660030C1EC3F"
+					item: { count: 1, id: "aether:music_disc_aether_tune" }
+					type: "item"
+				}
+				{
+					id: "53CBB4BBC41B0F32"
+					item: { count: 1, id: "aether:music_disc_ascending_dawn" }
+					type: "item"
+				}
+				{
+					id: "3DEBBCFD32ECA629"
+					item: { count: 1, id: "aether:music_disc_sliders_wrath" }
+					type: "item"
+				}
+				{
+					id: "496433710EB9446E"
+					item: { count: 1, id: "deep_aether:music_disc_a_morning_wish" }
+					type: "item"
+				}
+				{
+					id: "3A18C4563DBC856E"
+					item: { count: 1, id: "deep_aether:music_disc_nabooru" }
+					type: "item"
+				}
+				{
+					id: "6CE7860E818311F4"
+					item: { count: 1, id: "deep_aether:music_disc_cyclone" }
+					type: "item"
+				}
+				{
+					id: "64BF69D80AC84567"
+					item: { count: 1, id: "deep_aether:music_disc_above_the_rain" }
+					type: "item"
+				}
+				{
+					id: "060398ECA2937E99"
+					item: { count: 1, id: "deep_aether:music_disc_atta" }
+					type: "item"
+				}
+				{
+					id: "68A39AD6B12FBA20"
+					item: { count: 1, id: "deep_aether:music_disc_faent" }
+					type: "item"
+				}
+				{
+					id: "2A3937FC60431860"
+					item: { count: 1, id: "deep_aether:music_disc_himininn" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -1.5d
+		}
+	]
+}
