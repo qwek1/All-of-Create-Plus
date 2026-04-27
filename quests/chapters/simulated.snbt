@@ -2,16 +2,11 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "simulated"
-	group: "24D8C97C99F7384D"
+	group: "408D0BD6C358F867"
+	icon: {
+		id: "aeronautics:aviators_goggles"
+	}
 	id: "2E4EDF68FD3370DA"
-	images: [{
-		height: 5.0d
-		image: "immersive_aircraft:item/biplane"
-		rotation: 0.0d
-		width: 5.0d
-		x: 2.0d
-		y: -3.5d
-	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -19,8 +14,8 @@
 			dependencies: ["6BC0D978E293515F"]
 			id: "76D805D38E84858C"
 			tasks: [{
-				id: "7F06E1FD4431FCC9"
-				item: { count: 1, id: "simulated:red_portable_engine" }
+				id: "682813840751E4B3"
+				item: { components: { "ftbfiltersystem:filter": "or(item(simulated:light_gray_portable_engine)item(simulated:cyan_portable_engine)item(simulated:purple_portable_engine)item(simulated:blue_portable_engine)item(simulated:brown_portable_engine)item(simulated:green_portable_engine)item(simulated:red_portable_engine)item(simulated:black_portable_engine)item(simulated:white_portable_engine)item(simulated:orange_portable_engine)item(simulated:magenta_portable_engine)item(simulated:light_blue_portable_engine)item(simulated:yellow_portable_engine)item(simulated:lime_portable_engine)item(simulated:pink_portable_engine)item(simulated:gray_portable_engine))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.0d

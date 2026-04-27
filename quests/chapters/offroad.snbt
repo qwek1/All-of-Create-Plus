@@ -2,16 +2,11 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "offroad"
-	group: "24D8C97C99F7384D"
+	group: "408D0BD6C358F867"
+	icon: {
+		id: "offroad:tire"
+	}
 	id: "010F3251541FC7DC"
-	images: [{
-		height: 5.0d
-		image: "create:item/furnace_minecart_contraption"
-		rotation: 0.0d
-		width: 5.0d
-		x: 0.5d
-		y: 1.0d
-	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -19,8 +14,8 @@
 			dependencies: ["6BC0D978E293515F"]
 			id: "163D0CE9361628FA"
 			tasks: [{
-				id: "215CD525422D6198"
-				item: { count: 1, id: "simulated:red_portable_engine" }
+				id: "160BDEB4D20F782C"
+				item: { components: { "ftbfiltersystem:filter": "or(item(simulated:light_gray_portable_engine)item(simulated:cyan_portable_engine)item(simulated:purple_portable_engine)item(simulated:blue_portable_engine)item(simulated:brown_portable_engine)item(simulated:green_portable_engine)item(simulated:red_portable_engine)item(simulated:black_portable_engine)item(simulated:white_portable_engine)item(simulated:orange_portable_engine)item(simulated:magenta_portable_engine)item(simulated:light_blue_portable_engine)item(simulated:yellow_portable_engine)item(simulated:lime_portable_engine)item(simulated:pink_portable_engine)item(simulated:gray_portable_engine))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -59,7 +54,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["223A1E5B6E119BF3"]
@@ -75,8 +70,8 @@
 				item: { count: 1, id: "offroad:rockcutting_wheel" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.0d
+			x: -1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["163D0CE9361628FA"]
