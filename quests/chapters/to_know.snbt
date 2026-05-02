@@ -17,16 +17,28 @@
 	}]
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		icon: {
-			id: "minecraft:stone"
+	quests: [
+		{
+			icon: {
+				id: "minecraft:stone"
+			}
+			id: "471AF5B3E41F6713"
+			tasks: [{
+				id: "65502B03244DE91B"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
 		}
-		id: "471AF5B3E41F6713"
-		tasks: [{
-			id: "65502B03244DE91B"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+		{
+			id: "3079DF976F5290C3"
+			tasks: [{
+				id: "6B61F6637012CED5"
+				item: { count: 1, id: "aeroclaims:claim_block" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+	]
 }
